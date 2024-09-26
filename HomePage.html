@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women Heal Foundation</title>
+    <title>Background Image Example</title>
+    <style>
+        body {
+            background-image: url('Background.png');
+            background-size: cover; /* Ensures the image covers the entire page */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Ensures the image does not repeat */
+            height: 100vh; /* Makes the background fill the entire viewport */
+            margin: 0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #8e44ad;
+            color: #fcf6f6;
+        }
+        header {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 110px;
+        }
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .contact-button {
+            background-color: #ffffff;
+            color: #8e44ad;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+        .hero {
+            text-align: center;
+            font-weight: bolder;
+            font-size: large;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-weight: bold;
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        .tagline {
+            font-style: italic;
+            font-weight: bold;
+            margin-bottom: 20px;
+            
+        }
+        .description {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media screen and (max-width: 960px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            .hero h1 {
+                font-size: 2em;
+            }
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="Logo1.png" alt="Women Heal Foundation Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Programs.html">Programs</a></li>
+                <li><a href="News&Events.html">News & Events</a></li>
+                <li><a href="contact.html" class="contact-button">Contact Us Now</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Women Heal</h1>
+            <p class="tagline">"You heal a woman, You heal a nation"</p>
+            <p class="description">Empower. Heal. Thrive. The Women Heal Foundation is your sanctuary for transformation, offering mental health support and empowering programs that create a community of healing. Join us in creating a world where every woman can heal, grow, and lead with strength and confidence.</p>
+        </section>
+        <section class="social-links">
+            <a href="#" class="youtube">@HealtheeWomen</a>
+            <a href="#" class="facebook">@WomenHeal__</a>
+            <a href="#" class="instagram">@womenheal_</a>
+            <a href="#" class="twitter">@WomenHeal_</a>
+        </section>
+    </main>
+</body>
+</html>
