@@ -6,8 +6,7 @@
     <title>News & Events - Women Heal Foundation</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Include the same global styles as in index.html */
-        /* Additional styles for the news and events page */
+        /* Global and additional page-specific styles */
         .news-events-content {
             padding: 50px 20px;
             max-width: 800px;
@@ -25,6 +24,53 @@
             font-style: italic;
             margin-bottom: 10px;
         }
+
+        /* Gallery section styling */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            cursor: pointer;
+            object-fit: cover;
+        }
+
+        /* Lightbox styling */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        .lightbox:target {
+            display: flex;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: #ffffff;
+            font-size: 24px;
+            cursor: pointer;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -33,13 +79,16 @@
         <img src="Logo1.png" alt="Women Heal Foundation Logo" class="logo">
         <nav>
             <ul>
+                <li><a href="HomePage.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Programs.html">Programs</a></li>
                 <li><a href="News&Events.html" class="active">News & Events</a></li>
                 <li><a href="contact.html" class="contact-button">Contact Us Now</a></li>
             </ul>
-        </nav>   <!-- Same header as index.html -->
+        </nav>  
     </header>
+    <img src="Logo.png" alt="Women Heal Foundation Programs" class="centered-image">
+
     <main>
         <section class="news-events-content">
             <h1>News & Events</h1>
@@ -57,6 +106,45 @@
                 <h2>Launch of Online Counseling Services</h2>
                 <p class="event-date">15 June 2024</p>
                 <p>In response to growing demand, we proudly launched our online counseling platform, expanding our reach and providing accessible mental health support to women across the nation.</p>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Event Gallery</h2>
+            <div class="gallery">
+                <a href="#img1"><img src="HnrblePMN.jpg" alt="Event Image 1"></a>
+                <a href="#img2"><img src="Podcast.jpeg" alt="Event Image 2"></a>
+                <a href="#img3"><img src="NDZ.jpg" alt="Event Image 3"></a>
+                <a href="#img4"><img src="WomenLead.jpeg" alt="Event Image 4">
+                <a href="#img5"><img src="Womenlead2.jpeg" alt="Event Image 3"></a>
+                <a href="#img6"><img src="WomenOnFire.jpeg" alt="Event Image 3"></a></a>
+            </div>
+
+            <!-- Lightbox Popups -->
+            <div id="img1" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="HnrblePMN.jpg" alt="Event Image 1">
+            </div>
+            <div id="img2" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="Podcast.jpeg" alt="Event Image 2">
+            </div>
+            <div id="img3" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="NDZ.jpg" alt="Event Image 3">
+            </div>
+            <div id="img4" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="WomenLead.jpeg" alt="Event Image 4">
+            </div>
+            <div id="img5" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="Womenlead2.jpeg" alt="Event Image 4">
+            </div>
+            <div id="img6" class="lightbox">
+                <a href="#" class="close-btn">&times;</a>
+                <img src="WomenOnFire.jpeg" alt="Event Image 4">
             </div>
         </section>
     </main>

@@ -22,8 +22,14 @@ body, html {
     justify-content: space-between;
     align-items: center;
 }
+
+.centered-image { 
+  display: block;
+   margin: 20px auto; 
+   max-width: 200px; }
+
 .logo {
-    width: 110px;
+    width: 100px;
 }
 nav ul {
     list-style-type: none;
